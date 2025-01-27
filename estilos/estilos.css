@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+@font-face {
+    font-family: 'Party Confetti';
+    src: url(../fonts/Party\ Confetti.otf);
+}
+
+.subtitle{
+    font-family: 'Party Confetti';
+}
+
+@font-face {
+    font-family: 'Comica Boom';
+    src: url(../fonts/Comica\ Boom.otf);
+}
+
+.title{
+    font-family: 'Comica Boom';
+}
+
+.title-color{
+    color: tomato;
+}
+
+.title-white{
+    color: white;
+}
+
+
+.grid-index{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 130px auto;
+    grid-template-areas: 
+    "vid nav"
+    "vid main";
+}
+
+
+
+img.logo{
+    position: absolute;
+    height: 50px;
+    right: 90vw;
+
+
+}
+
+.grid-nav{
+    grid-area: nav;
+    background-color: tomato;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding-right: 2rem;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Party Confetti;
+    color: yellow;
+}
+
+.grid-vid{
+    grid-area: vid;
+    background-color: tomato;
+    height: 100lvh;
+}
+
+.grid-vid video{
+    height: 100lvh;
+}
+
+.grid-main{
+    grid-area: main;
+    background-color: tomato;
+    color: white;
+    display: flex;
+}
+
+.grid-main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+main div img{
+    width: 70%;
+    max-height: 150px;
+}
+
+span{
+    display: block;
+    padding: 1rem 0 0 0;
+}
+
+.p-main{
+    padding: 0 90px;
+}
+
+.p-small, .nav-small{
+    display:none;
+}
+
+a.button{
+    display: block;
+    font-size: 1.5rem;
+    color: tomato;
+    text-decoration: none;
+    display: inline-block;
+    background-color: yellow;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    margin: 1rem;
+}
+
+
+h2{
+    text-align: center;
+    font-family: Comica Boom;
+    padding-bottom: 75px;
+}
+
+div.cards-popular{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+
+}
+
+div.card-popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    gap: 15px;
+    padding: 20px;
+}
+
+div#popular-options{
+    padding: 75px;
+}
+
+div#popular-options img{
+    height: 200px;
+}
+
+h3.subtitle-popular{
+    font-family: Party Confetti;
+    font-size: 1.4rem;
+    color: tomato;
+}
+
+.p-popular{
+    text-align: justify;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+div.clients-reviews{
+    background-color: tomato;
+    padding: 75px;
+}
+
+.cards-reviews{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.fa-star{
+    color: yellow;
+    padding: 5px;
+}
+.card-review{
+    color: white;
+    width: 250px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: justify;
+    margin: 20px;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #3cbced;
+    height: auto;
+    font-size: 1.5rem;
+    background-image: url(../logos/logo-footer.svg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+footer div img.footer-color-green{
+    background-color: tomato;
+    width: 120%;
+
+
+}
+
+footer .grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "about ."
+    "info social";
+    padding: 75px;
+    color: white;
+    gap: 50px;
+}
+
+footer .grid-footer p{
+    grid-area: about;
+    /*background-color: blueviolet;*/
+    padding-right: 40%;
+}
+
+footer .grid-footer ul{
+    grid-area: info;
+    /*background-color: bisque;*/
+    list-style: none;
+}
+
+footer .grid-footer ul li a{
+    color: white;
+}
+
+footer .grid-footer div{
+    display: flex;
+    grid-area: social;
+    /*background-color: chartreuse;*/
+    align-items: end;
+    justify-content: end;
+}
+
+.fa-brands{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.logo-footer{
+    height: 400px;
+    position: relative;
+    top: -100px;
+    display: none;
+}
+
+@media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio:4/3){
+
+    #popular-options{
+        display: block;
+        background-color: white;
+    }
+
+    .cards-popular{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-popular{
+        padding: 20px 0;
+    }
+
+    .cards-reviews{
+        flex-wrap: wrap;
+    }
+
+    .card-review{
+        padding: 20px 0;
+    }
+
+    .nav-big{
+        display: none;
+    }
+
+    .nav-small{
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .grid-index{
+        display: block;
+        background: linear-gradient(transparent, tomato);
+        height: auto;
+    }
+
+
+    .grid-vid{
+        height: auto;
+    }
+
+    .grid-vid video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        z-index: -2;
+    }
+
+    .grid-nav{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+    .grid-main{
+        background-color: transparent;
+        padding: 50px;
+        text-align: center;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .grid-main div p, .grid-main div a {
+        display: none;
+
+    }
+
+    .grid-main img{
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    img.logo{
+        position: absolute;
+        left: 50px;
+    }
+
+    p.p-main{
+        padding: 0;
+    }
+    
+    .p-small{
+        display: flex;
+        background-color: tomato;
+        padding: 50px;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    footer{
+        font-size: 1rem;
+    }
+
+    div.grid-footer{
+        grid-template-areas: 
+        "about about"
+        "info social";
+    }
+
+
+    @media screen and (max-width: 564px) {
+        div.grid-footer{
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.grid-footer p{
+            padding: 0;
+        }
+    }
+    
+
+}
+
