@@ -11,8 +11,9 @@ $orange: #CE5600;
 $white: white;
 $black: black;
 
-ul{
+ul, h1, h2, h3, h4, h5{
     padding: 0;
+    margin: 0;
 }
 
 .btn-close{
@@ -90,6 +91,7 @@ ul{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 
 
@@ -130,13 +132,16 @@ ul{
 }
 
 
-
 img.logo{
-    position: absolute;
     height: 50px;
+    margin: 40px 60px 40px 0;
+    text-align: left;
+}
+
+img.logo-index{
+    position: absolute;
     right: 90vw;
-
-
+    height: 50px;
 }
 
 .grid-nav{
@@ -154,6 +159,10 @@ header nav ul{
     padding-right: 2rem;
 }
 
+.header-rest{
+    background-color: $green1;
+    padding-left: 75px !important;
+}
 
 header nav ul li{
 
@@ -221,7 +230,7 @@ a.button{
     background-color: $yellow1;
     padding: 1rem 2rem;
     border-radius: 100px;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 a.button:hover{
@@ -233,7 +242,7 @@ a.button:active{
 }
 
 
-h2{
+h2.h2-title{
     text-align: center;
     font-family: Comica Boom;
     padding-bottom: 75px;
@@ -257,7 +266,7 @@ div.card-popular{
     padding: 20px;
 }
 
-div#popular-options{
+.p75{
     padding: 75px;
 }
 
@@ -280,7 +289,6 @@ h3.subtitle-popular{
 
 div.clients-reviews{
     background-color: $green1;
-    padding: 75px;
 }
 
 .cards-reviews{
@@ -314,12 +322,23 @@ footer{
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: left bottom;
+
+
 }
+footer div img.footer{
+    width: 120%;
+}
+
 footer div img.footer-color-green{
     background-color: $green1;
-    width: 120%;
+}
 
+footer div img.footer-color-yellow{
+    background-color: $yellow1;
+}
 
+footer div img.footer-color-white{
+    background-color: $white;
 }
 
 footer .grid-footer{
@@ -371,7 +390,121 @@ footer .grid-footer div{
     display: none;
 }
 
+
+// BALLOONS PAGE
+
+.balloon-service{
+    background-color: $green1;
+    background-image: url(../patterns/balloon-pattern.svg);
+    background-size: 400px;
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hero carousel";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+
+    .hero{
+        text-align: left !important;
+        grid-area: hero;
+
+        h1, h2{
+            padding: 1rem 0;
+            color: $yellow1;
+        }
+
+        p{
+            padding: 1rem 0px 2rem 0;
+            font-weight: bold;
+            color: $white;
+            min-width: 400px;
+            max-width: 800px;
+
+
+        }
+    }
+
+    .carousel{
+        height: 550px;
+        width: 415px;
+        border-radius: 100px;
+        grid-area: carousel;
+
+    }
+
+    .carousel-inner{
+        height: 550px;
+        width: 415px;
+        border-radius: 100px;
+    }
+
+}
+
+.cards-party-size{
+    flex-wrap: wrap;
+    scale: 0.9;
+}
+
+.card-party-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    color: $green1;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: justify;
+
+    img{
+        height: 250px;
+        padding: 1rem 0;
+    }
+
+    h3{
+        padding: 1rem 0;
+    }
+
+    p{
+        padding: 1rem 0;
+    }
+}
+
+.grid-creations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, auto) ;
+    grid-template-areas: 
+    "img1 img3 img3"
+    "img2 img3 img3"
+    "img4 img4 img5"
+    "img4 img4 img6"
+    "img7 img7 img8"
+    "img7 img7 img9"
+    "img10 img10 img11"
+    "img10 img10 img12";
+    gap: 1rem;
+    overflow: hidden;
+
+    @for $i from 1 through 12{
+        .img#{$i}{
+            grid-area: img#{$i};
+            width: 100%;
+            overflow: hidden;
+            border-radius: 50px;
+            object-fit: cover;
+        }
+    }
+}
+
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio:4/3){
+
+    .header-rest{
+        padding-left: 1.5rem !important;
+    }
 
     #popular-options{
         display: block;
@@ -450,7 +583,7 @@ footer .grid-footer div{
         margin-bottom: 50px;
     }
 
-    img.logo{
+    img.logo-index{
         position: absolute;
         left: 50px;
     }
@@ -492,7 +625,40 @@ footer .grid-footer div{
         }
     }
 
+    .balloon-service{
+        display: block;
+        height: auto;
+
+        .hero{
+            scale: 0.8;
+        }
+
+        .carousel{
+            width: 70vw;
+            height: auto;
+            border-radius: 100px;
     
+        }
+    
+        .carousel-inner{
+            width: 70vw;
+            height: auto;
+            border-radius: 100px;
+        }
+
+    }
+
+    .grid-creations{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto) ;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12";
+    }
 
 }
 

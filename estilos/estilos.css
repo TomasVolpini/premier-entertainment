@@ -1,5 +1,6 @@
-ul {
+ul, h1, h2, h3, h4, h5 {
   padding: 0;
+  margin: 0;
 }
 
 .btn-close {
@@ -70,6 +71,7 @@ ul {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -104,9 +106,15 @@ ul {
 }
 
 img.logo {
-  position: absolute;
   height: 50px;
+  margin: 40px 60px 40px 0;
+  text-align: left;
+}
+
+img.logo-index {
+  position: absolute;
   right: 90vw;
+  height: 50px;
 }
 
 .grid-nav {
@@ -122,6 +130,11 @@ header nav ul {
   list-style: none;
   gap: 1.5rem;
   padding-right: 2rem;
+}
+
+.header-rest {
+  background-color: #009179;
+  padding-left: 75px !important;
 }
 
 header nav ul li a {
@@ -186,7 +199,7 @@ a.button {
   background-color: #FEE466;
   padding: 1rem 2rem;
   border-radius: 100px;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 a.button:hover {
@@ -197,7 +210,7 @@ a.button:active {
   background-color: #FDB81D;
 }
 
-h2 {
+h2.h2-title {
   text-align: center;
   font-family: Comica Boom;
   padding-bottom: 75px;
@@ -220,7 +233,7 @@ div.card-popular {
   padding: 20px;
 }
 
-div#popular-options {
+.p75 {
   padding: 75px;
 }
 
@@ -242,7 +255,6 @@ h3.subtitle-popular {
 
 div.clients-reviews {
   background-color: #009179;
-  padding: 75px;
 }
 
 .cards-reviews {
@@ -278,9 +290,20 @@ footer {
   background-position: left bottom;
 }
 
+footer div img.footer {
+  width: 120%;
+}
+
 footer div img.footer-color-green {
   background-color: #009179;
-  width: 120%;
+}
+
+footer div img.footer-color-yellow {
+  background-color: #FEE466;
+}
+
+footer div img.footer-color-white {
+  background-color: white;
 }
 
 footer .grid-footer {
@@ -330,7 +353,183 @@ footer .grid-footer div {
   display: none;
 }
 
+.balloon-service {
+  background-color: #009179;
+  background-image: url(../patterns/balloon-pattern.svg);
+  background-size: 400px;
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "hero carousel";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.balloon-service .hero {
+  text-align: left !important;
+  grid-area: hero;
+}
+.balloon-service .hero h1, .balloon-service .hero h2 {
+  padding: 1rem 0;
+  color: #FEE466;
+}
+.balloon-service .hero p {
+  padding: 1rem 0px 2rem 0;
+  font-weight: bold;
+  color: white;
+  min-width: 400px;
+  max-width: 800px;
+}
+.balloon-service .carousel {
+  height: 550px;
+  width: 415px;
+  border-radius: 100px;
+  grid-area: carousel;
+}
+.balloon-service .carousel-inner {
+  height: 550px;
+  width: 415px;
+  border-radius: 100px;
+}
+
+.cards-party-size {
+  flex-wrap: wrap;
+  scale: 0.9;
+}
+
+.card-party-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  color: #009179;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: justify;
+}
+.card-party-size img {
+  height: 250px;
+  padding: 1rem 0;
+}
+.card-party-size h3 {
+  padding: 1rem 0;
+}
+.card-party-size p {
+  padding: 1rem 0;
+}
+
+.grid-creations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "img1 img3 img3" "img2 img3 img3" "img4 img4 img5" "img4 img4 img6" "img7 img7 img8" "img7 img7 img9" "img10 img10 img11" "img10 img10 img12";
+  gap: 1rem;
+  overflow: hidden;
+}
+.grid-creations .img1 {
+  grid-area: img1;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img2 {
+  grid-area: img2;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img3 {
+  grid-area: img3;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img4 {
+  grid-area: img4;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img5 {
+  grid-area: img5;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img6 {
+  grid-area: img6;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img7 {
+  grid-area: img7;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img8 {
+  grid-area: img8;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img9 {
+  grid-area: img9;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img10 {
+  grid-area: img10;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img11 {
+  grid-area: img11;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-creations .img12 {
+  grid-area: img12;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
+  .header-rest {
+    padding-left: 1.5rem !important;
+  }
   #popular-options {
     display: block;
     background-color: white;
@@ -391,7 +590,7 @@ footer .grid-footer div {
     height: 50%;
     margin-bottom: 50px;
   }
-  img.logo {
+  img.logo-index {
     position: absolute;
     left: 50px;
   }
@@ -420,5 +619,29 @@ footer .grid-footer div {
   }
   div.grid-footer p {
     padding: 0;
+  }
+}
+@media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
+  .balloon-service {
+    display: block;
+    height: auto;
+  }
+  .balloon-service .hero {
+    scale: 0.8;
+  }
+  .balloon-service .carousel {
+    width: 70vw;
+    height: auto;
+    border-radius: 100px;
+  }
+  .balloon-service .carousel-inner {
+    width: 70vw;
+    height: auto;
+    border-radius: 100px;
+  }
+  .grid-creations {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12";
   }
 }/*# sourceMappingURL=estilos.css.map */
