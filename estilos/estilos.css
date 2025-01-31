@@ -107,7 +107,7 @@ ul, h1, h2, h3, h4, h5 {
 
 img.logo {
   height: 50px;
-  margin: 40px 60px 40px 0;
+  margin: 40px 60px 40px 75px;
   text-align: left;
 }
 
@@ -129,12 +129,27 @@ header nav ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
-  padding-right: 2rem;
+  padding-right: 75px;
 }
 
 .header-rest {
-  background-color: #009179;
-  padding-left: 75px !important;
+  display: grid !important;
+  grid-template-columns: 30vw 70vw;
+  grid-template-rows: auto;
+  grid-template-areas: "logo navv";
+  position: absolute;
+  display: inline-block;
+}
+
+.nav-logo {
+  grid-area: logo;
+  justify-self: start;
+}
+
+.nav-big, .nav-small {
+  grid-area: navv;
+  justify-self: end;
+  align-self: center;
 }
 
 header nav ul li a {
@@ -172,7 +187,7 @@ header nav ul li a:hover {
   gap: 5%;
 }
 
-main div img {
+main div img.imagotipo {
   width: 70%;
   max-height: 150px;
 }
@@ -354,6 +369,7 @@ footer .grid-footer div {
 }
 
 .balloon-service {
+  padding-top: 200px;
   background-color: #009179;
   background-image: url(../patterns/balloon-pattern.svg);
   background-size: 400px;
@@ -524,6 +540,86 @@ footer .grid-footer div {
   border-radius: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.services-list {
+  background-color: #009179;
+  height: 50vh;
+  text-align: center;
+  padding: 10rem 75px 75px 75px;
+}
+
+.services-cards {
+  position: relative;
+  top: -12.5vh;
+  text-align: center;
+}
+.services-cards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.services-cards ul li {
+  list-style: none;
+}
+.services-cards ul li h2 {
+  font-size: 3rem;
+}
+
+.service-card-balloons {
+  background-color: #009179;
+}
+
+.service-card-magicians {
+  background-color: #550091;
+}
+.service-card-magicians a {
+  color: #550091;
+}
+
+.service-card-paint {
+  background-color: #910050;
+}
+.service-card-paint a {
+  color: #910050;
+}
+
+.service-card-foam {
+  background-color: #00ADB2;
+}
+.service-card-foam a {
+  color: #00ADB2;
+}
+
+.service-card-caricature {
+  background-color: #CE5600;
+}
+.service-card-caricature a {
+  color: #CE5600;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 800px;
+  grid-template-areas: "info img";
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.308) 5px 5px 10px;
+  color: white;
+  text-align: left;
+}
+.service-card .service-info {
+  grid-area: info;
+  padding: 2rem 0 0 2rem;
+}
+.service-card .service-img {
+  grid-area: img;
+}
+.service-card .service-img img {
+  border-radius: 300px 50px 50px 0px;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {

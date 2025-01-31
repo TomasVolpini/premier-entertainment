@@ -134,7 +134,7 @@ ul, h1, h2, h3, h4, h5{
 
 img.logo{
     height: 50px;
-    margin: 40px 60px 40px 0;
+    margin: 40px 60px 40px 75px;
     text-align: left;
 }
 
@@ -156,12 +156,29 @@ header nav ul{
     display: flex;
     list-style: none;
     gap: 1.5rem;
-    padding-right: 2rem;
+    padding-right: 75px;
 }
 
 .header-rest{
-    background-color: $green1;
-    padding-left: 75px !important;
+    //background-color: $green1;
+    display: grid !important;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: auto;
+    grid-template-areas: "logo navv";
+    //padding-left: 75px !important;
+    position: absolute;
+    display: inline-block;
+}
+
+.nav-logo{
+    grid-area: logo;
+    justify-self: start;
+}
+.nav-big, .nav-small{
+    grid-area: navv;
+    justify-self: end;
+    align-self: center;
+    //padding-right: 2rem;
 }
 
 header nav ul li{
@@ -203,7 +220,7 @@ header nav ul li{
     gap: 5%;
 }
 
-main div img{
+main div img.imagotipo{
     width: 70%;
     max-height: 150px;
 }
@@ -394,6 +411,7 @@ footer .grid-footer div{
 // BALLOONS PAGE
 
 .balloon-service{
+    padding-top: 200px;
     background-color: $green1;
     background-image: url(../patterns/balloon-pattern.svg);
     background-size: 400px;
@@ -496,6 +514,107 @@ footer .grid-footer div{
             overflow: hidden;
             border-radius: 50px;
             object-fit: cover;
+        }
+    }
+}
+
+
+//SERVICES PAGE
+
+.services-list{
+    background-color: $green1;
+    height: 50vh;
+    text-align: center;
+    padding: 10rem 75px 75px 75px;
+
+}
+
+.services-cards{
+
+    position: relative;
+    top: -12.5vh;
+    text-align: center;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        li{
+            list-style: none;
+        }
+
+        li h2{
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
+.service-card-balloons{
+    background-color: $green1;
+}
+
+.service-card-magicians{
+    background-color: $purple;
+
+    a{
+        color: $purple;
+    }
+}
+
+.service-card-paint{
+    background-color: $garnet;
+
+    a{
+        color: $garnet;
+    }
+}
+
+.service-card-foam{
+    background-color: $cyan;
+
+    a{
+        color: $cyan;
+    }
+}
+
+.service-card-caricature{
+    background-color: $orange;
+
+    a{
+        color: $orange;
+    }
+}
+
+.service-card{
+    //margin-bottom: 2rem;
+    //padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 800px;
+    grid-template-areas: "info img";
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.308) 5px 5px 10px;
+    color: $white;
+    text-align: left;
+
+    .service-info{
+        grid-area: info;
+        padding: 2rem 0 0 2rem;
+    }
+    .service-img{
+        grid-area: img;
+
+
+        img{
+            border-radius: 300px 50px 50px 0px;
+            //object-fit: cover;
+            width: 100%;
+            height: 100%;
+
         }
     }
 }
