@@ -742,4 +742,16 @@ footer .grid-footer div {
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12";
   }
+}
+@media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) and (max-width: 680px) {
+  .services-cards {
+    scale: 50%;
+    margin: -450px 0;
+  }
+}
+@media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) and (min-width: 681px) and (max-width: 970px) {
+  .services-cards {
+    scale: 70%;
+    margin: -250px 0;
+  }
 }/*# sourceMappingURL=estilos.css.map */
