@@ -1,31 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Premier Entertainment - About us</title>
+    <link rel="shortcut icon" href="../logos/Isotipo-color.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <header>
-        <img class="isologo" src="../logos/isologo.png" alt="Premier Entertainment's logo">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./balloons.html">Balloons</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./about-us.html">About us</a></li>
-            <li><a href="./get-in-touch.html">Get in touch</a></li>
-        </ul>
+    <header class="header-rest">
+        <a class="nav-logo" href="../index.html"><img class="logo" src="../logos/Isotipo color.svg" alt="Premier Entertainment's logo"></a>
+        <nav class="nav-big">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./balloons.html">Balloons</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./about-us.html">About us</a></li>
+                <li><a href="./get-in-touch.html">Get in touch</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-small">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body d-flex align-items-end">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./balloons.html">Balloons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./get-in-touch.html">Get in touch</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </nav>
+        </nav>
     </header>
 
-    <main>
-        <img class="bio" src="../images/Brian-Styles-St.-Louis-Balloon-Artist.webp" alt="Brian Styles, balloon artist from St. Louis">
-        <h1>Brian Styles - The St. Louis Balloon Guy</h1>
-        <p>With his goofy antics and witty one-liners, Brian Styles has been entertaining audiences for over fifteen years in St. Louis. From creating one-of-a-kind elaborate balloon art, to baffling groups with mystifying comedy magic, Brian is sure to be a hit at any event. Throughout the years, Brian has entertained at birthday parties, school functions, weddings, grand openings, restaurants, and the list goes on and on. With his belief in creating a personable relationship with each and every client, it's no wonder people have Brian back year after year.</p>
+    <main class="about-us p75">
+        <h1 class="title title-white">About us</h1>
+        <div class="about-brian">
+            <div class="brian-bio">
+                <h2 class="title title-yellow">Meet Brian Styles,</h2>
+                <h3 class="subtitle title-yellow">the St. Louis Balloon Guy</h3>
+                <p class="body-white">With his goofy antics and witty one-liners, Brian Styles has been entertaining audiences for over fifteen years in St. Louis. <span></span>Throughout the years, Brian has entertained at birthday parties, school functions, weddings, grand openings, restaurants, and the list goes on and on. <span></span>From creating one-of-a-kind elaborate balloon art, to baffling groups with mystifying comedy magic, Brian is sure to be a hit at any event. <span></span>Come join the fun, bring a suggestion, and watch the magic happen in St. Louis.</p>
+            </div>
+            <div class="brian-image shadow"></div>
+        </div>
+        <h2 class="title title-yellow div-title">Brian Styles is the fastest, most elaborate, interactive, personable balloon artist in the St. Louis area.</h2>
+        <div class="about-premier">
+            <div class="premier-image shadow"></div>
+            <div class="premier-bio">
+            <h2 class="title title-yellow">A star was born</h2>
+            <h3 class="subtitle title-yellow">Premier Entertainment it is!</h3>
+            <p class="body-white">What started out as a one man balloon company, Premier Entertainment has quickly grown to include St. Louis' best balloon artists, face painters, magicians, and caricature artists. <span></span>Our company philosophy is simple; To be the best at what we do. From the initial consultation, to the moment we are packing up from your event, we want it to be perfect!
+            <span></span>Our entertainers work as a team and are constantly brainstorming how we can do better.</p>
+            </div>
+        </div>
     </main>
+    
+    <div class="FAQ">
+        <h2 class="title title-green FAQ">FAQ & Terms and Conditions to Booking</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What is your pricing?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    We have multiple entertainers offering different services. To get an accurate free no-obligation quote please fill out our event request form, or call, 636-734-2083. We work diligently to keep our prices as affordable as possible.
+
+                    <span></span>Due to rising travel costs and current inflation, a minimum $10 travel fee is added to all booked entertainers.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  When do I pay?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  When booking an entertainer(s), payment is due the day of the event. A late fee of 25% is added to any payments received after the day of the event. <span></span>When ordering balloon decor, payment is due to secure your date of delivery. <span></span>In some instances, especially last minute bookings, we may collect payment in advance.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  I require special accommodations. Should I mention this when booking?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes! If you require anything that we don't normally provide, this must be discussed during the booking process. We can not accommodate needs that weren't mutually agreed upon during the initial booking. This includes facial coverings, moving our entertainers once they are set up, staying past our agreed time, etc…
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you perform outside?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, weather permitting. A spot in the shade is the best for our entertainment.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Are Balloons eco-friendly?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  With conservation playing a big role in today's society, rest assured balloons are very eco-friendly! Balloons are made from 100% latex. Latex is a natural product, produced from ethically harvested tree sap. If a balloon happens to be left outside, it will biodegrade.
+                </div>
+              </div>
+            </div>
+
+          </div>
+    </div>
+
+    
 
     <footer>
-        <p>All rights reserved.</p>
+        <div><img class="footer-color-white footer" src="../patterns/Footer pattern 1.svg" alt=""></div>
+        <div class="grid-footer">
+            <p>Premier Entertainment is a family owned and operated full service entertainment provider serving the St. Louis and St. Charles vicinity.</p>
+            <ul >
+                <li class="subtitle">Premier Entertainment</li>
+                <li class="subtitle">St. Louis, MO</li>
+                <li class="subtitle">636-734-2083</li>
+                <li ><a class="subtitle" href="#">Contact us</a></li>
+                <li class="subtitle">© 2024 All Rights Reserved.</li>
+            </ul>
+            <div>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <img class="logo-footer" src="./logos/logo-footer.svg" alt="">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

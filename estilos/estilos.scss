@@ -1,15 +1,6 @@
-$green1: #009179;
-$blue1: #3CBCED;
-$blue2: #3DAFD2;
-$yellow1: #FEE466;
-$yellow2: #FDD405;
-$yellow3: #FDB81D;
-$purple: #550091;
-$garnet: #910050;
-$cyan: #00ADB2;
-$orange: #CE5600;
-$white: white;
-$black: black;
+@import "custom-values.scss";
+
+
 
 ul, h1, h2, h3, h4, h5{
     padding: 0;
@@ -113,12 +104,21 @@ ul, h1, h2, h3, h4, h5{
     font-family: 'Comica Boom';
 }
 
-.title-color{
+.title-color, .title-green{
     color: $green1;
 }
 
 .title-white{
     color: $white;
+}
+
+.title-yellow{
+    color: $yellow1;
+}
+
+.body-white{
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -525,8 +525,7 @@ footer .grid-footer div{
 .services-list{
     background-color: $green1;
     height: 50vh;
-    text-align: center;
-    padding: 10rem 75px 75px 75px;
+    @include h1-position();
 
 }
 
@@ -621,6 +620,107 @@ footer .grid-footer div{
 
         img.caricature{
             object-fit: fill;
+        }
+    }
+}
+
+
+//ABOUT US PAGE
+
+
+
+main.about-us{
+    background-color: $green1;
+
+    h1{
+        @include h1-position();
+    }
+
+    div.about-brian{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .brian-bio{
+            width: 40%;
+            min-width: 330px;
+            h2, h3, p{
+                padding-bottom: 1rem;
+            }
+        }
+
+
+        .brian-image{
+            height: 500px;
+            width: 400px;
+            border-radius: 10%;
+            background-size: cover;
+            background-image: url(../images/Brian-Styles-St.-Louis-Balloon-Artist.webp);
+        }
+    }
+
+    h2.div-title{
+        text-align: center;
+        max-width: 995px;
+        margin: 100px auto;
+    }
+
+    div.about-premier{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .premier-bio{
+            width: 40%;
+            min-width: 330px;
+
+            h2, h3, p{
+                padding-bottom: 1rem;
+            }
+        }
+        
+        .premier-image{
+            height: 500px;
+            width: 400px;
+            border-radius: 10%;
+            background-size: cover;
+            background-image: url(../images/underwater-balloons.webp)
+        }
+    }
+}
+
+div.FAQ{
+    h2.FAQ{
+        text-align: center;
+        padding: 5rem;
+    }
+
+    div#accordionExample{
+        margin: 0 5rem 5rem 5rem;
+
+        button{
+            font-size: 1.3rem;
+            font-family: Party Confetti;
+        }
+
+        .accordion-item{
+            margin-bottom: 2rem;
+            border: none !important;
+            background-color: $yellow1 !important;
+
+        }
+
+        .accordion-button{
+            background-color: $yellow1 !important;
+        }
+
+
+        .accordion-button:not(.collapsed), .accordion-button:focus{
+            box-shadow: none;
+            color: $green1;
         }
     }
 }
@@ -809,7 +909,44 @@ footer .grid-footer div{
             margin: -250px 0;
         }
     }
-        
+       
+    
+    main.about-us{
+
+        div.about-brian{
+
+            .brian-bio{
+                width: 80%;
+                min-width: 20px;
+            }
+    
+            .brian-image{
+                height: 500px*0.7;
+                width: 400px*0.7;
+                border-radius: 10%;
+            }
+        }
+
+    
+        div.about-premier{
+    
+            .premier-bio{
+                width: 80%;
+                min-width: 20px;
+    
+
+            }
+            
+            .premier-image{
+                margin-bottom: 5rem;
+                height: 500px*0.7;
+                width: 400px*0.7;
+                border-radius: 10%;
+
+            }
+        }
+    }
+
 }
 
 

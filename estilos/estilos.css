@@ -90,12 +90,21 @@ ul, h1, h2, h3, h4, h5 {
   font-family: "Comica Boom";
 }
 
-.title-color {
+.title-color, .title-green {
   color: #009179;
 }
 
 .title-white {
   color: white;
+}
+
+.title-yellow {
+  color: #FEE466;
+}
+
+.body-white {
+  color: white;
+  font-weight: bold;
 }
 
 .grid-index {
@@ -630,6 +639,83 @@ footer .grid-footer div {
      object-fit: fill;
 }
 
+main.about-us {
+  background-color: #009179;
+}
+main.about-us h1 {
+  text-align: center;
+  padding: 10rem 75px 75px 75px;
+}
+main.about-us div.about-brian {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main.about-us div.about-brian .brian-bio {
+  width: 40%;
+  min-width: 330px;
+}
+main.about-us div.about-brian .brian-bio h2, main.about-us div.about-brian .brian-bio h3, main.about-us div.about-brian .brian-bio p {
+  padding-bottom: 1rem;
+}
+main.about-us div.about-brian .brian-image {
+  height: 500px;
+  width: 400px;
+  border-radius: 10%;
+  background-size: cover;
+  background-image: url(../images/Brian-Styles-St.-Louis-Balloon-Artist.webp);
+}
+main.about-us h2.div-title {
+  text-align: center;
+  max-width: 995px;
+  margin: 100px auto;
+}
+main.about-us div.about-premier {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main.about-us div.about-premier .premier-bio {
+  width: 40%;
+  min-width: 330px;
+}
+main.about-us div.about-premier .premier-bio h2, main.about-us div.about-premier .premier-bio h3, main.about-us div.about-premier .premier-bio p {
+  padding-bottom: 1rem;
+}
+main.about-us div.about-premier .premier-image {
+  height: 500px;
+  width: 400px;
+  border-radius: 10%;
+  background-size: cover;
+  background-image: url(../images/underwater-balloons.webp);
+}
+
+div.FAQ h2.FAQ {
+  text-align: center;
+  padding: 5rem;
+}
+div.FAQ div#accordionExample {
+  margin: 0 5rem 5rem 5rem;
+}
+div.FAQ div#accordionExample button {
+  font-size: 1.3rem;
+  font-family: Party Confetti;
+}
+div.FAQ div#accordionExample .accordion-item {
+  margin-bottom: 2rem;
+  border: none !important;
+  background-color: #FEE466 !important;
+}
+div.FAQ div#accordionExample .accordion-button {
+  background-color: #FEE466 !important;
+}
+div.FAQ div#accordionExample .accordion-button:not(.collapsed), div.FAQ div#accordionExample .accordion-button:focus {
+  box-shadow: none;
+  color: #009179;
+}
+
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
   .header-rest {
     padding-left: 1.5rem !important;
@@ -766,5 +852,26 @@ footer .grid-footer div {
   .services-cards {
     scale: 70%;
     margin: -250px 0;
+  }
+}
+@media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
+  main.about-us div.about-brian .brian-bio {
+    width: 80%;
+    min-width: 20px;
+  }
+  main.about-us div.about-brian .brian-image {
+    height: 350px;
+    width: 280px;
+    border-radius: 10%;
+  }
+  main.about-us div.about-premier .premier-bio {
+    width: 80%;
+    min-width: 20px;
+  }
+  main.about-us div.about-premier .premier-image {
+    margin-bottom: 5rem;
+    height: 350px;
+    width: 280px;
+    border-radius: 10%;
   }
 }/*# sourceMappingURL=estilos.css.map */

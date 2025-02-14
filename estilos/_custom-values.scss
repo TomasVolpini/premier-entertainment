@@ -1,0 +1,18 @@
+$green1: #009179;
+$blue1: #3CBCED;
+$blue2: #3DAFD2;
+$yellow1: #FEE466;
+$yellow2: #FDD405;
+$yellow3: #FDB81D;
+$purple: #550091;
+$garnet: #910050;
+$cyan: #00ADB2;
+$orange: #CE5600;
+$white: white;
+$black: black;
+
+
+@mixin h1-position{
+    text-align: center;
+    padding: 10rem 75px 75px 75px;
+}
