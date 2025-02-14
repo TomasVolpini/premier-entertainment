@@ -716,6 +716,62 @@ div.FAQ div#accordionExample .accordion-button:not(.collapsed), div.FAQ div#acco
   color: #009179;
 }
 
+.header-fill {
+  background-color: #009179;
+  height: 10rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.get-in-touch h1 a {
+  color: black;
+  text-decoration: none;
+  font-family: Comica Boom;
+}
+
+.forms-guide {
+  padding: 3rem;
+  width: 40%;
+  min-width: 570px;
+  border: #FDB81D solid 10px;
+  border-radius: 45px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.forms-guide div {
+  color: #009179;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Comica Boom;
+}
+.forms-guide p {
+  margin-top: 50px;
+  font-weight: bold;
+}
+.forms-guide p a {
+  color: #009179;
+  font-family: Comica Boom;
+}
+
+.form {
+  width: 50%;
+  background-color: #009179;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  height: 1000px;
+  margin-top: 5rem;
+  padding: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+span.span-forms {
+  display: inline !important;
+  color: #FEE466 !important;
+}
+
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
   .header-rest {
     padding-left: 1.5rem !important;

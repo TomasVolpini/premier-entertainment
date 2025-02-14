@@ -122,6 +122,8 @@ ul, h1, h2, h3, h4, h5{
 }
 
 
+
+
 .grid-index{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -723,6 +725,66 @@ div.FAQ{
             color: $green1;
         }
     }
+}
+
+//GET IN TOUCH
+
+.header-fill{
+    background-color: $green1;
+    height: 10rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.get-in-touch h1 a{
+    color: $black;
+    text-decoration: none;
+    font-family: Comica Boom;
+}
+
+.forms-guide{
+    padding: 3rem;
+    width: 40%;
+    min-width: 570px;
+    border: $yellow3 solid 10px;
+    border-radius: 45px;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    div{
+        color: $green1;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Comica Boom;
+
+    }
+    p{
+        margin-top: 50px;
+        font-weight: bold;
+        a{
+            color: $green1;
+            font-family: Comica Boom;
+        }
+    }
+}
+
+.form{
+    width: 50%;
+    background-color: $green1;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    height: 1000px;
+    margin-top: 5rem;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+span.span-forms{
+    display: inline !important;
+    color: $yellow1 !important;
 }
 
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio:4/3){
