@@ -776,7 +776,7 @@ div.FAQ{
     margin: 0 auto;
     text-align: center;
     color: white;
-    height: 1000px;
+    height: auto;
     margin-top: 5rem;
     padding: 2.5rem;
     border-radius: 2.5rem;
@@ -786,6 +786,114 @@ span.span-forms{
     display: inline !important;
     color: $yellow1 !important;
 }
+
+.event-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+  
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 0.5rem;
+      }
+  
+      input,
+      select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    }
+  
+    // Grupo para nombre (first name y last name)
+    .name-group {
+      .name-inputs {
+        display: flex;
+        gap: 1rem;
+  
+        input {
+          flex: 1;
+        }
+      }
+    }
+  
+    // Grupo para fecha y hora
+    .event-date-time-group {
+      .date-time-inputs {
+        display: flex;
+        gap: 1rem;
+  
+        input {
+          flex: 1;
+        }
+      }
+    }
+  
+    // Grupo para ubicación
+    .location-group {
+      input {
+        margin-bottom: 0.5rem;
+      }
+  
+      .city-state-zip {
+        display: flex;
+        gap: 1rem;
+  
+        input,
+        select {
+          flex: 1;
+        }
+      }
+    }
+  
+    // Grupo para servicios (checkboxes)
+    .services-group {
+      .services-options {
+  
+        .checkbox-group {
+            display: flex;
+            justify-content: start;
+            align-content: center;
+  
+          input[type="checkbox"] {
+            width: auto;
+          }
+          label{
+            display: inline;
+            margin: 0;
+          }
+        }
+      }
+    }
+  
+    button[type="submit"] {
+    
+        display: block;
+        font-size: 1.5rem;
+        color: $green1;
+        text-decoration: none;
+        display: inline-block;
+        background-color: $yellow1;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        margin: 1rem 0;
+        font-family: Party Confetti;
+        border: none;
+  
+      &:hover {
+        background-color: $yellow3;
+      }
+    }
+  }
+  
 
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio:4/3){
 
