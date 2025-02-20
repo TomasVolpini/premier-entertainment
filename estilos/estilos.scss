@@ -772,6 +772,7 @@ div.FAQ{
 
 .form{
     width: 50%;
+    min-width: 700px;
     background-color: $green1;
     margin: 0 auto;
     text-align: center;
@@ -795,6 +796,11 @@ span.span-forms{
   
     .form-group {
       margin-bottom: 1.5rem;
+
+      textarea#more-info{
+        width: 100%;
+        min-height: 175px;
+      }
   
       label {
         display: block;
@@ -869,6 +875,7 @@ span.span-forms{
           label{
             display: inline;
             margin: 0;
+            padding-left: 0.3rem;
           }
         }
       }
@@ -893,9 +900,149 @@ span.span-forms{
       }
     }
   }
+
+  .order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+
+  
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: left;
+
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+  
+    // Grupo para el nombre (First name & Last name)
+    .name-group {
+      .name-inputs {
+        display: flex;
+        gap: 1rem;
+  
+        input {
+          flex: 1;
+        }
+      }
+    }
+  
+    // Grupo para la ubicación de entrega
+    .delivery-location-group {
+      input {
+        margin-bottom: 0.5rem;
+      }
+      .city-state-zip {
+        display: flex;
+        gap: 1rem;
+  
+        input,
+        select {
+          flex: 1;
+        }
+      }
+
+    }
+  
+    // Grupo para opciones de pedido (checkboxes)
+    .order-group {
+      .order-options {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+  
+        .checkbox-group {
+            display: flex;
+            justify-content: start;
+            align-content: center;
+  
+          input[type="checkbox"] {
+            width: auto;
+          }
+          label{
+            display: inline;
+            margin: 0;
+            padding-left: 0.3rem;
+          }
+        }
+      }
+    }
+  
+    // Grupo para el método de pago (radio)
+    .payment-group {
+      .radio-group {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+  
+        input[type="radio"] {
+            width: auto;
+          }
+          label{
+            display: inline;
+            margin: 0;
+            padding-left: 0.3rem;
+          }
+      }
+    }
+
+    .confirm-group{
+        .checkbox-group{
+                display: flex;
+                justify-content: start;
+                align-content: center;
+      
+              input[type="checkbox"] {
+                width: auto;
+              }
+              label{
+                display: inline;
+                margin: 0;
+                padding-left: 0.3rem;
+              }
+            
+        }
+    }
+
+    button[type="submit"] {
+    
+        display: block;
+        font-size: 1.5rem;
+        color: $green1;
+        text-decoration: none;
+        display: inline-block;
+        background-color: $yellow1;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        margin: 1rem 0;
+        font-family: Party Confetti;
+        border: none;
+  
+      &:hover {
+        background-color: $yellow3;
+      }
+    }
+
+  }
   
 
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio:4/3){
+
+    .p75{
+        padding: 45px;
+    }
 
     .header-rest{
         padding-left: 1.5rem !important;
@@ -1117,6 +1264,61 @@ span.span-forms{
         }
     }
 
+
+    .form{
+        width: 100%;
+        min-width: 250px;
+        background-color: $green1;
+
+    }
+
+    .forms-guide{
+        padding: 1.5rem;
+        width: 60%;
+        min-width: 235px;
+        border: $yellow3 solid 10px;
+        border-radius: 22.5px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        font-size: small;
+    }
+
+    .event-form {
+        .name-group {
+          .name-inputs {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+        .event-date-time-group {
+          .date-time-inputs {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+        .location-group {
+          .city-state-zip {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+      }
+
+      .order-form {
+        .name-group {
+          .name-inputs {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+        .delivery-location-group {
+          .city-state-zip {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+      }
+    
 }
 
 

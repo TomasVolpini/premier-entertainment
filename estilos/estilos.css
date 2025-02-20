@@ -757,6 +757,7 @@ div.FAQ div#accordionExample .accordion-button:not(.collapsed), div.FAQ div#acco
 
 .form {
   width: 50%;
+  min-width: 700px;
   background-color: #009179;
   margin: 0 auto;
   text-align: center;
@@ -780,6 +781,10 @@ span.span-forms {
 }
 .event-form .form-group {
   margin-bottom: 1.5rem;
+}
+.event-form .form-group textarea#more-info {
+  width: 100%;
+  min-height: 175px;
 }
 .event-form .form-group label {
   display: block;
@@ -831,6 +836,7 @@ span.span-forms {
 .event-form .services-group .services-options .checkbox-group label {
   display: inline;
   margin: 0;
+  padding-left: 0.3rem;
 }
 .event-form button[type=submit] {
   display: block;
@@ -849,7 +855,110 @@ span.span-forms {
   background-color: #FDB81D;
 }
 
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.order-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.order-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.order-form .form-group input,
+.order-form .form-group select,
+.order-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+.order-form .name-group .name-inputs {
+  display: flex;
+  gap: 1rem;
+}
+.order-form .name-group .name-inputs input {
+  flex: 1;
+}
+.order-form .delivery-location-group input {
+  margin-bottom: 0.5rem;
+}
+.order-form .delivery-location-group .city-state-zip {
+  display: flex;
+  gap: 1rem;
+}
+.order-form .delivery-location-group .city-state-zip input,
+.order-form .delivery-location-group .city-state-zip select {
+  flex: 1;
+}
+.order-form .order-group .order-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.order-form .order-group .order-options .checkbox-group {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.order-form .order-group .order-options .checkbox-group input[type=checkbox] {
+  width: auto;
+}
+.order-form .order-group .order-options .checkbox-group label {
+  display: inline;
+  margin: 0;
+  padding-left: 0.3rem;
+}
+.order-form .payment-group .radio-group {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.order-form .payment-group .radio-group input[type=radio] {
+  width: auto;
+}
+.order-form .payment-group .radio-group label {
+  display: inline;
+  margin: 0;
+  padding-left: 0.3rem;
+}
+.order-form .confirm-group .checkbox-group {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.order-form .confirm-group .checkbox-group input[type=checkbox] {
+  width: auto;
+}
+.order-form .confirm-group .checkbox-group label {
+  display: inline;
+  margin: 0;
+  padding-left: 0.3rem;
+}
+.order-form button[type=submit] {
+  display: block;
+  font-size: 1.5rem;
+  color: #009179;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #FEE466;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  margin: 1rem 0;
+  font-family: Party Confetti;
+  border: none;
+}
+.order-form button[type=submit]:hover {
+  background-color: #FDB81D;
+}
+
 @media only screen and (min-aspect-ratio: 0.3) and (max-aspect-ratio: 4/3) {
+  .p75 {
+    padding: 45px;
+  }
   .header-rest {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
@@ -1006,5 +1115,40 @@ span.span-forms {
     height: 350px;
     width: 280px;
     border-radius: 10%;
+  }
+  .form {
+    width: 100%;
+    min-width: 250px;
+    background-color: #009179;
+  }
+  .forms-guide {
+    padding: 1.5rem;
+    width: 60%;
+    min-width: 235px;
+    border: #FDB81D solid 10px;
+    border-radius: 22.5px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: small;
+  }
+  .event-form .name-group .name-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .event-form .event-date-time-group .date-time-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .event-form .location-group .city-state-zip {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .order-form .name-group .name-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .order-form .delivery-location-group .city-state-zip {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
