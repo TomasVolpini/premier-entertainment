@@ -83,6 +83,7 @@ ul, h1, h2, h3, h4, h5{
     box-sizing: border-box;
     font-family: 'Roboto';
     scroll-behavior: smooth;
+    
 }
 
 
@@ -221,6 +222,8 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     gap: 5%;
+    scale: 0.85;
+    margin: -20px;
 }
 
 main div img.imagotipo{
@@ -235,6 +238,8 @@ span{
 
 .p-main{
     padding: 0 90px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .p-small, .nav-small{
@@ -409,6 +414,38 @@ footer .grid-footer div{
     top: -100px;
     display: none;
 }
+
+div.focus-div{
+    position: relative;
+
+    img.focus-circle{
+        height: 100px !important;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        margin: 0 auto;
+        z-index: -2;
+        scale: 2;
+    }
+    
+
+
+}
+div.focus-div:hover{
+    img.focus-circle{
+        transform: scale(1.5);
+        transition: all 0.5s ease;
+    }
+
+    img.focus-img{
+        transform: scale(0.9);
+        transition: all 0.5s ease;
+        
+    }
+
+}
+
+
 
 
 // BALLOONS PAGE
